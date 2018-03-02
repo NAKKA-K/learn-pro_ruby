@@ -1,4 +1,4 @@
-text = <<TEXT
+text = <<~TEXT
 I love Python.
 Ruby is a great language.
 Java and JavaScript are different.
@@ -7,7 +7,7 @@ TEXT
 text.scan(/[A-Z][A-Za-z]+/) #=> ["Python", "Ruby", "Java", "JavaScript"]
 
 # ある形式の文字列を変換する
-text = <<TEXT
+text = <<~TEXT
 郵便番号は1234567です
 住所は6770056で 東京都1234です
 TEXT
