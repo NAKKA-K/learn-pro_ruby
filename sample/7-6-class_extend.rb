@@ -23,3 +23,4 @@ user.methods.sort #=> [:!, :!=, ...]
 user.instance_of?(User) #=> true
 user.is_a?(User) #=> true
 user.is_a?(Object) #=> true
+
