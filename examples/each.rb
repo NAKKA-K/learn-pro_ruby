@@ -1,16 +1,13 @@
 class Array
     def myeach
-	i = 0
+        i = 0
         while i < self.size
-	    yield self[i]
-	    i += 1
-	end
+            yield self[i] # ブロック引数に値を返す。ブロックの処理が終わった後、ここに処理が戻る
+            i += 1
+        end
     end
 end
 
-
-array = [10, 20, 30]
-
-array.myeach do |tmp|
-    p tmp
+[10, 20, 30].myeach do |item|
+    p item
 end
